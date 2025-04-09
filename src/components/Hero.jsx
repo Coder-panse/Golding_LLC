@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='flex flex-col items-center mt-10'>
+    <div className='flex flex-col items-center py-10  bg-black text-white'>
         <div className='w-[320px] sm:w-[450px] '>
             <img src="Golding_hero.png" alt="" className='w-full object-cover'/>
         </div>
@@ -11,6 +11,7 @@ const Hero = () => {
             <p className='text-xl'>Your Trusted Legal Services Partner! ⚖️</p>
         </div>
     </div>
+    // bg-[#111C4E]
   )
 }
 

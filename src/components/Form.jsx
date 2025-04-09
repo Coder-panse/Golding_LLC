@@ -2,10 +2,13 @@ import React from "react";
 import { FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Form = () => {
   return (
-    <div className="flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-auto mt-32 md:mt-40">
+    <div className="mt-32" >
+      <h1 className="text-center text-3xl md:text-5xl font-bold ">Contact Us</h1>
+      <div className="flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-auto mt-20 md:mt-28 ">
       {/* Left Section */}
       <div
         className="w-full md:w-1/2 p-6 text-white flex flex-col justify-center relative min-h-[300px] md:min-h-full"
@@ -32,14 +35,14 @@ const Form = () => {
 
           <div className="mb-4 flex items-center justify-center md:justify-start">
             <FaMapMarkerAlt className="mr-2" />
-            <span>123 AB road, Indore, MP, India</span>
+            <span>Richmond, Virginia</span>
           </div>
 
           <div className="flex justify-center md:justify-start space-x-4 mt-4">
-            <FaInstagram className="text-pink-500 text-2xl cursor-pointer" />
-            <FaFacebook className="text-blue-500 text-2xl cursor-pointer" />
-            <FaTwitter className="text-blue-400 text-2xl cursor-pointer" />
-            <FaLinkedin className="text-blue-600 text-2xl cursor-pointer" />
+            <Link to={'https://www.instagram.com/nemsa_g/'}><FaInstagram className="text-pink-500 text-2xl cursor-pointer" /></Link>
+            <Link to={'https://www.facebook.com/Nemsagg'}><FaFacebook className="text-blue-500 text-2xl cursor-pointer" /></Link>
+            {/* <FaTwitter className="text-blue-400 text-2xl cursor-pointer" /> */}
+            <Link to={'https://www.linkedin.com/in/nernemsaa/'}><FaLinkedin className="text-blue-600 text-2xl cursor-pointer" /></Link>
           </div>
         </div>
       </div>
@@ -80,6 +83,7 @@ const Form = () => {
           </button>
         </form>
       </div>
+    </div>
     </div>
   );
 };
