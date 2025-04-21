@@ -33,7 +33,7 @@ const Card = () => {
   {Cardinfo.map((card, index) => (
     <div
       key={index}
-      className="w-full sm:w-72 bg-black text-white rounded-md p-3 pb-5 flex flex-col 
+      className="w-full sm:w-72 bg-[#193451] text-white rounded-md p-3 pb-5 flex flex-col 
                  transition-transform duration-300 hover:scale-105 hover:shadow-lg"
     >
       {/* Image Section (Fixed Size) */}
