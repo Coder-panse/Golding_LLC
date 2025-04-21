@@ -19,7 +19,7 @@ const Service = () => {
     },
   ];
   return (
-    <div className="px-5 py-10 bg-black text-white">
+    <div className="px-5 py-10 bg-[#193451] text-white font-oregano ">
       <h1 className="font-bold text-3xl md:text-5xl text-center pt-10 underline">
         Why Choose Golding
       </h1>
