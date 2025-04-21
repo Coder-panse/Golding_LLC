@@ -57,8 +57,10 @@ const getStars = (rating) => {
 
 const Testimonials = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-10 mt-[100px] lg:mt-[130px]">
-      <h2 className="text-3xl sm:text-5xl font-bold text-center mb-20">Our Testimonials</h2>
+    <div className="max-w-6xl mx-auto px-4 py-10 mt-[70px] md:mt-[100px] lg:mt-[130px]">
+      <h2 className="text-3xl sm:text-5xl font-bold text-center mb-20 relative">Our Testimonials
+      <span className="block h-1 w-32 bg-[#2a5787] mx-auto mt-2 rounded"></span>
+      </h2>
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={20}

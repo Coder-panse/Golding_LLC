@@ -36,9 +36,9 @@ const Footer = () => {
         </div>
 
         {/* Quick Links 2 */}
-        <div>
+        <div className="flex flex-col items-center">
           <h3 className="font-bold text-lg mb-2">Get In Touch</h3>
-          <ul className="space-y-1">
+          <ul className="space-y-1 flex flex-col items-center md:items-start">
             <li className="flex gap-1 ">
               <Link className="hover:underline flex gap-1 items-center">
                 <FaPhone className="mr-2" />
@@ -48,7 +48,7 @@ const Footer = () => {
             <li className="flex gap-1">
               <Link className="hover:underline flex gap-1 items-center">
                 <MdEmail className="mr-2" />
-                <span>info@golding.com</span>
+                 <span><Link to={'mailto:goldnnsa@gmail.com'}>goldnnsa@gmail.com</Link></span>
               </Link>
             </li>
             <li>

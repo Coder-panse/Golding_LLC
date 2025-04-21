@@ -20,8 +20,9 @@ const Service = () => {
   ];
   return (
     <div className="px-5 py-10 bg-[#193451] text-white font-oregano ">
-      <h1 className="font-bold text-3xl md:text-5xl text-center pt-10 underline">
+      <h1 className="font-bold text-3xl md:text-5xl text-center pt-7 md:pt-10 relative ">
         Why Choose Golding
+        <span className="block h-1 w-32 bg-white mx-auto mt-2 rounded"></span>
       </h1>
       <div className="flex flex-wrap justify-center gap-10 mt-20 xl:mx-40">
         {Cardinfo.map((card, index) => (

@@ -6,8 +6,10 @@ import { Link } from "react-router-dom";
 
 const Form = () => {
   return (
-    <div className="mt-32" >
-      <h1 className="text-center text-3xl md:text-5xl font-bold ">Contact Us</h1>
+    <div className="mt-24 md:mt-32" >
+      <h1 className="text-center text-3xl md:text-5xl font-bold relative">Contact Us
+      <span className="block h-1 w-32 bg-[#2a5787] mx-auto mt-2 rounded"></span>
+      </h1>
       <div className="flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-4xl mx-auto mt-20 md:mt-28 ">
       {/* Left Section */}
       <div
@@ -30,7 +32,7 @@ const Form = () => {
 
           <div className="mb-4 flex items-center justify-center md:justify-start">
             <MdEmail className="mr-2" />
-            <span>info@golding.com</span>
+            <span><Link to={'mailto:goldnnsa@gmail.com'}>goldnnsa@gmail.com</Link></span>
           </div>
 
           <div className="mb-4 flex items-center justify-center md:justify-start">
