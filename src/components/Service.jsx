@@ -5,7 +5,7 @@ const Service = () => {
     {
       img: "img4.png",
       name: "Accuracy & Confidentiality Guaranteed",
-      des: "As a veteran that has worked in security sectors, holding security clearances secret security clearances, I know how to keep your information safe and secure. Your information and documents are safe with us.",
+      des: "As a veteran that has worked in security sectors, holding security clearances, I know how to keep your information safe and secure. Your information and documents are safe with us.",
     },
     {
       img: "img5.png",
