@@ -3,6 +3,7 @@ import { FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { IoCall } from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -41,7 +42,7 @@ const Footer = () => {
           <ul className="space-y-1 flex flex-col items-center md:items-start">
             <li className="flex gap-1 ">
               <Link className="hover:underline flex gap-1 items-center">
-                <FaPhone className="mr-2" />
+                <IoCall className="mr-2" onClick={()=>window.location.href='tel:+1(917)582-6971'} />
                 <span>+1 (917) 582-6971</span>
               </Link>
             </li>

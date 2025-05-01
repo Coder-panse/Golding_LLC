@@ -3,6 +3,7 @@ import { FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { IoCall } from "react-icons/io5";
 
 const Form = () => {
   return (
@@ -26,7 +27,7 @@ const Form = () => {
           <p className="mb-4">Get in touch with me on social media or send me a message</p>
 
           <div className="mb-4 flex items-center justify-center md:justify-start">
-            <FaPhone className="mr-2" />
+            <IoCall className="mr-2" onClick={()=>window.location.href='tel:+1(917)582-6971'} />
             <span>+1 (917) 582-6971</span>
           </div>
 
