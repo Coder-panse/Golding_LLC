@@ -5,6 +5,7 @@ import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { IoCall } from "react-icons/io5";
 import axios from "axios";
+import {toast } from 'react-toastify';
 
 const Form = () => {
 
@@ -25,9 +26,11 @@ const Form = () => {
     try {
       const response = await axios.post("http://localhost:8000/mail", data);
       console.log("Email sent successfully:", response.data);
+      toast.success('Message sent successfully')
       setData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       console.error("Error sending email:", error.response?.data || error.message);
+      toast.error("Something Went Wrong")
       setData({ name: "", email: "", subject: "", message: "" });
     }
   };
