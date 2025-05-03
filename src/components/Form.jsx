@@ -1,11 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { IoCall } from "react-icons/io5";
+import axios from "axios";
 
 const Form = () => {
+
+  const [data,setData]=useState({
+    name:"",
+    email:"",
+    subject:"",
+    message:""
+  })
+
+
+  const handleinput=(e)=>{
+      setData({...data,[e.target.name]:e.target.value})
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // always prevent default at the top
+    try {
+      const response = await axios.post("http://localhost:8000/mail", data);
+      console.log("Email sent successfully:", response.data);
+      setData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      console.error("Error sending email:", error.response?.data || error.message);
+      setData({ name: "", email: "", subject: "", message: "" });
+    }
+  };
+  
+
   return (
     <div className="mt-24 md:mt-32" >
       <h1 className="text-center text-3xl md:text-5xl font-bold relative">Contact Us
@@ -52,33 +79,60 @@ const Form = () => {
 
       {/* Right Section */}
       <div className="w-full md:w-1/2 p-6">
-        <form className="space-y-4">
+        <form className="space-y-4" onSubmit={handleSubmit} >
           <div>
             <label className="block font-semibold">
               Your Name <span className="text-red-500">*</span>
             </label>
-            <input type="text" className="w-full p-2 border rounded" required />
+            <input 
+            type="text"
+            value={data.name}
+            className="w-full p-2 border rounded" 
+            required 
+            name="name"
+            onChange={handleinput}
+            />
           </div>
 
           <div>
             <label className="block font-semibold">
               Your Email <span className="text-red-500">*</span>
             </label>
-            <input type="email" className="w-full p-2 border rounded" required />
+            <input 
+            type="email" 
+            className="w-full p-2 border rounded" 
+            required 
+            name="email"
+            value={data.email}
+            onChange={handleinput}
+            />
           </div>
 
           <div>
             <label className="block font-semibold">
               Subject <span className="text-red-500">*</span>
             </label>
-            <input type="text" className="w-full p-2 border rounded" required />
+            <input 
+            type="text" 
+            className="w-full p-2 border rounded" 
+            required 
+            name="subject"
+            value={data.subject}
+            onChange={handleinput}
+            />
           </div>
 
           <div>
             <label className="block font-semibold">
               Your Message <span className="text-red-500">*</span>
             </label>
-            <textarea className="w-full p-2 border rounded h-24" required></textarea>
+            <textarea 
+            className="w-full p-2 border rounded h-24" 
+            required
+            name="message"
+            value={data.message}
+            onChange={handleinput}
+            ></textarea>
           </div>
 
           <button className="bg-blue-600 text-white w-full py-2 rounded hover:bg-blue-700 transition duration-300">
