@@ -8,6 +8,7 @@ export default defineConfig({
     extend: {
       fontFamily: {
         oregano: ["Oregano", 'sans-serif'],
+        times: ['"Times New Roman"', 'Times', 'serif'],
       },
     },
   },

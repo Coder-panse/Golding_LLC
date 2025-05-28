@@ -32,12 +32,12 @@ const App = () => {
     <div>
       {
         showCallIcon && (
-          <i className="fixed top-[85%] right-[5%] p-5 bg-white rounded-full shadow-xl border cursor-pointer z-50" onClick={()=>window.location.href='tel:+1(917)582-6971'}>
-            <IoCall size={24} />
+          <i className="fixed top-[85%] right-[5%] p-5 bg-white rounded-full shadow-xl border justify-center flex gap-1 cursor-pointer z-50" onClick={()=>window.location.href='tel:+1(917)582-6971'}>
+            <IoCall size={24} /> Call Me
           </i>
         )
       }
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <Card />
       <Service />

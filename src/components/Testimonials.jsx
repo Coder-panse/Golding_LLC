@@ -9,27 +9,27 @@ import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 const testimonials = [
   {
     id: 1,
-    name: "Savannah Nguyen",
+    name: "Jasmine R., Richmond, VA",
     image: "https://randomuser.me/api/portraits/women/45.jpg",
     rating: 4,
     review:
-      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+      "I needed a power of attorney notarized urgently for my father, and they were able to come the same day. Professional, punctual, and made the entire process stress-free. Highly recommend their mobile notary service!",
   },
   {
     id: 2,
-    name: "Floyd Miles",
+    name: " Michael B., Henrico, VA",
     image: "https://randomuser.me/api/portraits/men/46.jpg",
     rating: 5,
     review:
-      "Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+      "As a small business owner, I often need documents notarized on short notice. I’ve used Golding multiple times, and he’s never let me down. Quick, reliable, and always courteous.",
   },
   {
     id: 3,
-    name: "Leslie Alexander",
+    name: "Tasha L., Midlothian, VA",
     image: "https://randomuser.me/api/portraits/women/50.jpg",
     rating: 4.5,
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt augue et libero dictum, id gravida metus cursus.",
+      "I’m a small PI attorney and my paperwork was getting severely backed up. I contacted Golding and he had the discovery documents I needed the very next day. He was clear, professional, and very affordable. I’ll definitely use him again.",
   },
   {
     id: 4,

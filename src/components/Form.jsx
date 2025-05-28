@@ -24,7 +24,7 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault(); // always prevent default at the top
     try {
-      const response = await axios.post("http://localhost:8000/mail", data);
+      const response = await axios.post("https://email-sevice-golding.onrender.com/mail", data);
       console.log("Email sent successfully:", response.data);
       toast.success('Message sent successfully')
       setData({ name: "", email: "", subject: "", message: "" });

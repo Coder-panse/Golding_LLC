@@ -8,9 +8,9 @@ const Navbar = () => {
         <img src="Golding.jpg" alt="" className="w-[80px] sm:w-[100px]" />
       </div>
 
-      <div className="bg-white p-4 rounded-full cursor-pointer" onClick={()=>window.location.href='tel:+1(917)582-6971'}>
+      <div className="bg-white p-4 flex justify-center rounded-full cursor-pointer" onClick={()=>window.location.href='tel:+1(917)582-6971'}>
           <i >
-            <IoCall />
+            <IoCall />Call Me
           </i>
 
         </div>

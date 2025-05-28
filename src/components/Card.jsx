@@ -7,26 +7,26 @@ const Card = () => {
   const Cardinfo = [
     {
       img: "img1.png",
-      name: "Notarization",
-      des: "Fast, reliable, and certified document notarization.",
+      name: " Virginia Notary Services",
+      des: "Fast, Reliable, and Affordable Notarization.",
     },
     {
       img: "img3.png",
       name: "Legal Document Drafting",
-      des: "Professionally crafted Discovery Demands and Responses, Predicate Notices, Affidavits, Summons and Complaints, and more.",
+      des: " Professionally crafted Discovery documents, Predicate Notices, Affidavits/Affirmations of Service, Summons and Complaints, and more!",
     },
-    {
-      img: "img2.png",
-      name: "1 on 1 LSAT tutoring",
-      des: "Expert guidance to help you ace the LSAT and get into law school!",
-    },
+    // {
+    //   img: "img2.png",
+    //   name: "1 on 1 LSAT tutoring",
+    //   des: "Expert guidance to help you ace the LSAT and get into law school!",
+    // },
   ];
   return (
     <div className="my-18 px-5 xl:my-28">
       <div>
         <div className="text-center my-8">
           <h1 className="font-bold text-3xl md:text-5xl relative inline-block">
-            Service We Offer
+            Services We Offer
             <span className="block h-1 w-32 bg-[#2a5787] mx-auto mt-2 rounded"></span>
           </h1>
         </div>
@@ -51,7 +51,7 @@ const Card = () => {
 
             {/* Button (Always at Bottom) */}
             <div className="mt-auto">
-              <button className="w-full py-2 bg-[#C5A658] rounded-md font-medium cursor-pointer">
+              <button className="w-full py-2 bg-[#e7b22f] rounded-md font-medium cursor-pointer">
                 Book Me
               </button>
             </div>
