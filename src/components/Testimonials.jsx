@@ -33,11 +33,11 @@ const testimonials = [
   },
   {
     id: 4,
-    name: "Cody Fisher",
+    name: " S. Patel, Litigation Associate, Morgan & Phillips LLP",
     image: "https://randomuser.me/api/portraits/men/52.jpg",
-    rating: 3.5,
+    rating: 4.5,
     review:
-      "Curabitur vel bibendum metus, at consequat metus. Integer ac nulla suscipit, scelerisque metus sit amet, condimentum est.",
+      "Our firm handles a steady stream of personal injury cases, and having access to dependable drafting support is invaluable. We requested assistance with a summons and complaint for a motor vehicle accident claim, and the turnaround was fast, accurate, and court-ready. The formatting and attention to detail matched our firm’s standards. Highly recommended for litigation support in high-volume environments.",
   },
 ];
 

@@ -7,6 +7,8 @@ import Form from "./components/Form";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
 import { IoCall } from "react-icons/io5";
+import { MdTextsms } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const App = () => {
 
@@ -32,9 +34,17 @@ const App = () => {
     <div>
       {
         showCallIcon && (
-          <i className="fixed top-[85%] right-[5%] p-5 bg-white rounded-full shadow-xl border justify-center flex gap-1 cursor-pointer z-50" onClick={()=>window.location.href='tel:+1(917)582-6971'}>
+          <div className="flex gap-5">
+            <i className="fixed top-[85%] right-[15%] p-5 bg-white rounded-full shadow-xl border justify-center flex gap-1 cursor-pointer z-50" onClick={()=>window.location.href='tel:+1(917)582-6971'}>
             <IoCall size={24} /> Call Now
           </i>
+
+         <Link to="https://wa.me/19175826971">
+          <i className="fixed top-[85%] right-[5%] p-5 bg-white rounded-full shadow-xl border justify-center flex gap-1 cursor-pointer z-50" onClick={()=>window.location.href='tel:+1(917)582-6971'}>
+            <MdTextsms size={24} /> Text Now
+          </i>
+         </Link>
+          </div>
         )
       }
       {/* <Navbar /> */}
